@@ -40,6 +40,7 @@
 -(void) enableReadNotification:(CBPeripheral *)p;
 -(void) read;
 -(void) writeValue:(CBUUID *)serviceUUID characteristicUUID:(CBUUID *)characteristicUUID p:(CBPeripheral *)p data:(NSData *)data;
+-(void) readValue: (CBUUID *)serviceUUID characteristicUUID:(CBUUID *)characteristicUUID p:(CBPeripheral *)p;
 
 -(UInt16) readLibVer;
 -(UInt16) readFrameworkVersion;
